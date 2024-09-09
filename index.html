@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eseménykezelő</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Eseménynaptár</h1>
+      <div id="navbar">
+        <div><a href="#events">Események</a></div>
+        <div><a href="#newEvents">Új esemény hozzáadása</a></div>
+      </div>
+    </header>
+
+    <h2>Események</h2>
+
+    <input
+      type="search"
+      name="searchBar"
+      id="searchBar"
+      placeholder="Keresés cím vagy dátum alapján"/>
+
+    <br/>
+
+    <div id="events"></div>
+
+    <h2>Új esemény hozzáadása</h2>
+
+    <div id="eventDiv">
+        <form id="newEvents">
+
+            <input
+              type="text"
+              name="eventName"
+              id="eventName"
+              placeholder="Esemény címe"/>
+      
+            <br/>
+      
+            <input
+              type="date"
+              name="eventDate"
+              id="eventDate"
+              placeholder="éééé. hh. nn."/>
+      
+            <br/>
+      
+            <input type="time" name="eventTime" id="eventTime" />
+      
+            <br/>
+      
+            <input
+              type="text"
+              name="eventDesc"
+              id="eventDesc"
+              placeholder="Esemény leírása"/>
+      
+            <br/>
+      
+            <button type="button" id="btnAdd">Hozzáadás</button>
+          </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Eseménynaptár</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
